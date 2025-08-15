@@ -1,4 +1,4 @@
-let my_number : number = 24;
+let my_number : number = 244_454_234;
 let name : string = "Hailemeskel";
 let isActive : boolean = true;
 
