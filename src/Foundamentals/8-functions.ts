@@ -9,3 +9,5 @@ function add(a: number, b: number): number {
 
 // It is better to annotate the function parameters and return type to ensure type safety and clarity.
 // In the above example, the number at the end of the function signature indicates that the function will return a number.
+
+add(5, 10); // This will return 15
