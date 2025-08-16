@@ -7,7 +7,6 @@ type Employee ={
     id: number;
     name  :string;
     age: number;
-
 }
 
 let new_employee: Employee = {
@@ -15,3 +14,5 @@ let new_employee: Employee = {
     name : "Hailemeskel Getaneh",
     age : 23
 }
+
+console.log('Hello', new_employee.name)
