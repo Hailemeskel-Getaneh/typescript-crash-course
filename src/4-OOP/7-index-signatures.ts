@@ -1,6 +1,7 @@
 // Index signatures in TypeScript 
 
  class StringArray {
+    
    [index: number]: string;
    [studentId: string]: string; // Index signature for string keys
 
