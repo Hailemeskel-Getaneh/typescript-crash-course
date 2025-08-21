@@ -33,8 +33,9 @@ class Account {
     }
 
     // private method to calculate Tax and this cannot be accessed outside the class
+
     private calculateTax(balance: number): number {
-        return balance * 0.1; // Example tax calculation
+        return balance * 0.1; 
     }
 }
 
