@@ -21,10 +21,7 @@ class Student extends Person {
         console.log(`${this.name} is studying.`);
     }
     
-    // Overriding the greet method
-    greet() {
-        console.log(`Hello, I am ${this.name}, a student with ID ${this.studentId}.`);
-    }
+   
     }
 
 class Teacher extends Person {
@@ -36,10 +33,7 @@ class Teacher extends Person {
         console.log(`${this.name} is teaching ${this.subject}.`);
     }
     
-    // Overriding the greet method
-    greet() {
-        console.log(`Hello, I am ${this.name}, a teacher of ${this.subject}.`);
-    }
+ 
 }   
 
 let student = new Student('Hailemeskel', 20, 'S12345');

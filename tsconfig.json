@@ -44,5 +44,6 @@
 
     // Type checking options
     // "noImplicitAny": false
+    "noImplicitOverride": true
   }
 }
