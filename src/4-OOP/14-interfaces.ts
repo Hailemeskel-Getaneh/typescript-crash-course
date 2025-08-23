@@ -1,25 +1,26 @@
-// Interfaces are like abstract class and methods but the are not important of you have any detail logic.
-
-interface Calander{
-
-    name: string;
-    addEvent(): void;
-    removeEvent(): void;
+// Interfaces only define structure, no implementation
+interface Calendar {
+  name: string;
+  addEvent(): void;
+  removeEvent(): void;
 }
 
-interface cloudCalander extends Calander{
-    sync(): void;
+// One interface can extend another
+interface CloudCalendar extends Calendar {
+  sync(): void;
 }
 
-interface GoogleCalander implements Calander{
-    constructor(public name: string){}
+// A class implements an interface
+class GoogleCalendar implements Calendar {
+  constructor(public name: string) {}
 
-    addEvent(): void{
-        throw new Error("This method is not implemented");
-        
-    }
+  addEvent(): void {
+    console.log("Event added to Google Calendar");
+  }
 
-    removeEvent(): void{
-        throw new Error("This method is not implemented")
-    }
+  removeEvent(): void {
+    console.log("Event removed from Google Calendar");
+  }
 }
+
+
