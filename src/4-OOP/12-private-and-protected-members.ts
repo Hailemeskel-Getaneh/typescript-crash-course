@@ -7,14 +7,14 @@ class Person {
     constructor(public firstName: string, public lastName: string){}
 
     get fullName (): string {
-        return `${firstName} ${lastName}`
+        return `${this.firstName} ${this.lastName}`
     } 
 
-    protected thinking(): string{
+    protected thinking(): void {
         console.log('A person can think')
     }
 
-    private walk(): string{
+    private walk(): void {
         console.log('A person can walk')
     }
 }
@@ -43,6 +43,6 @@ let printNames = (people: Person[]) => {
 }
 
 printNames([
-    new Student('Hailemeskel', 'Getaneh', 'DBU1501246')
-    new Teacher('Wondimagegn', 'Mulugeta')
+    new Student('Hailemeskel', 'Getaneh', 'DBU1501246'),
+    new Teacher('Wondimagegn', 'Mulugeta'),
 ])
